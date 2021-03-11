@@ -13,5 +13,12 @@ Examples:
 - repeat_it("cwAt") -> "C-Ww-Aaa-Tttt"
 """
 def repeat_it(input_str):
-    # Your code here
+    modif=[]
+    for i in range(len(input_str)): #gets the index as in enumerate()
+        modif.append(input_str[i]*(i+1))
+    out='-'.join(modif).title() #seperator.join()
+    return out
 
+print(repeat_it("abcd"))
+print(repeat_it("RqaEzty"))
+print(repeat_it("cwAt"))

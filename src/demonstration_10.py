@@ -17,5 +17,19 @@ the maximum number is first.
 """
 def max_and_min(input_str):
     # Your code here
+    # maxS=max(input_str)
+    # minS=min((input_str.split()))
+    # return "{} {}".format(maxS,minS)
+    # new_str=input_str.split(" ")
+    # #convert to array of integers
+    # print(new_str)
+    # nums = list(map(int,new_str)) # to be iterable
+    # print(nums)
+    nums=[int(item) for item in input_str.split(' ')] # int function on the item is what gets added to the list
+    return f'{max(nums)} {min(nums)}'
 
+
+print(max_and_min("1 2 3 4 5"))
+print(max_and_min("1 2 -3 4 5"))
+print(max_and_min("1 9 3 4 -5"))
 

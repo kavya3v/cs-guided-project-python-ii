@@ -1,0 +1,1 @@
+from newmath import fact

@@ -15,5 +15,12 @@ Examples:
 """
 def get_middle(input_str):
     # Your code here
+    mid=len(input_str)%2
+    if(mid==0): #even so return two middle char
+        return input_str[(int(len(input_str)/2)-1):(int(len(input_str)/2))+1]
+    return input_str[int(len(input_str)/2)]
 
-
+print(get_middle("test"))
+print(get_middle("testing"))
+print(get_middle("middle"))
+print(get_middle("A"))
